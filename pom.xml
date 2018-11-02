@@ -13,6 +13,29 @@
     <url>https://github.com/chensl5566/easyexcelx</url>
     <inceptionYear>2018</inceptionYear>
 
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>chensl5566</name>
+            <email>chensl5566@outlook.com</email>
+            <roles>
+                <role>developer</role>
+            </roles>
+            <timezone>+8</timezone>
+        </developer>
+    </developers>
+    <scm>
+        <connection>scm:git:https://github.com/chensl5566/easyexcelx.git</connection>
+        <developerConnection>scm:git:https://github.com/chensl5566/easyexcelx.git</developerConnection>
+        <url>https://github.com/chensl5566/easyexcelx</url>
+        <tag>v${project.version}</tag>
+    </scm>
 
     <properties>
         <!--<gpg.skip>true</gpg.skip>-->
@@ -110,6 +133,18 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
+                <version>1.6.3</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <serverId>ossrh</serverId>
+                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                </configuration>
             </plugin>
         </plugins>
     </build>
