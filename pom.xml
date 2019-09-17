@@ -7,18 +7,14 @@
     <version>1.0.1</version>
     <packaging>jar</packaging>
     <name>easyexcel</name>
-
     <description>easyexcel is a excel handle tools written in Java</description>
-
     <url>https://github.com/chensl5566/easyexcelx</url>
     <inceptionYear>2019</inceptionYear>
-
     <!--<parent>-->
         <!--<groupId>org.sonatype.oss</groupId>-->
         <!--<artifactId>oss-parent</artifactId>-->
         <!--<version>9</version>-->
     <!--</parent>-->
-
     <licenses>
         <license>
             <name>The Apache License, Version 2.0</name>
